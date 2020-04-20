@@ -27,7 +27,4 @@ jobs:
       uses: azure/webapps-deploy@v1
       with:
         creds: ${{ secrets.azureWebAppPublishProfile }}
-        app-name: 'githubavishkarwebpage'
-        slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_9a00198e76044ffeb9c0cdcc21659934 }}
-        package: '${{ github.workspace }}/target/*.jar'
+        
